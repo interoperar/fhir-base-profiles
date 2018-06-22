@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Practitioner xmlns="http://hl7.org/fhir">
+    <id value="practitioner-example-1"/>
+    <identifier id="personal">
+        <use value="official"/>
+        <type>
+            <coding>
+                <system value="https://github.com/interoperar/fhir-local-terminologies/identifiers/personal-identifier-type-co"/>
+                <code value="CC"/>
+                <display value="Cédula de Ciudadanía"/>
+            </coding>
+        </type>
+        <value value="654123987"/>
+    </identifier>
+    <active value="true"/>
+    <name>
+        <text value="Gregorio Casas"/>
+    </name>
+</Practitioner>

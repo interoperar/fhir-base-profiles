@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Coverage xmlns="http://hl7.org/fhir">
+    <id value="coverage-example-1"/>
+    <extension id="copayment-ind" url="https://github.com/interoperar/fhir-local-extensibility/copayment-ind">
+        <valueBoolean value="false"/>
+    </extension>
+    <identifier>
+        <value value="987654321"/>
+    </identifier>
+    <status value="active"/>
+    <type>
+        <coding>
+            <system value="https://github.com/interoperar/fhir-local-terminologies/code-systems/coverage-type-co"/>
+            <code value="POS"/>
+            <display value="Paquete Obligatorio de Servicios"/>
+        </coding>
+    </type>
+    <beneficiary>
+        <reference value="Patient/patient-example-1"/>
+    </beneficiary>
+    <payor>
+        <reference value="Organization/organization-example-1"/>
+    </payor>
+</Coverage>

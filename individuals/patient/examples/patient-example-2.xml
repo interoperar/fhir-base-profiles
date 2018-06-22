@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient xmlns="http://hl7.org/fhir">
+    <id value="patient-example-2"/>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <h2>Moreno Reyes Mario Alfonso</h2>
+            <ul>
+                <li><b>Identificación: </b>CC 987654321</li>
+                <li><b>Historia Clínica: </b>987654321</li>
+                <li><b>Sexo: </b>Masculino</li>
+                <li><b>Fecha de nacimiento: </b>1963/Ago/16</li>
+                <li><b>Correo electrónico: </b>nombre@example.com</li>
+                <li><b>Móvil: </b>+57(300)000-0000</li>
+                <li><b>Teléfono: </b>+57(1)111-1111</li>
+                <li><b>Dirección: </b>Calle 116 # 03-27
+                    <br />Bogotá D.C.
+                    <br />110100
+                    <br />Colombia
+                </li>
+            </ul>
+        </div>
+    </text>
+    <identifier id="personal">
+        <use value="official"/>
+        <type>
+            <coding>
+                <system value="https://github.com/interoperar/fhir-local-terminologies/identifiers/personal-identifier-type-co"/>
+                <code value="CC"/>
+                <display value="Cédula de Ciudadanía"/>
+            </coding>
+        </type>
+        <value value="987654321"/>
+    </identifier>
+    <identifier id="clinical">
+        <use value="usual"/>
+        <value value="987654321"/>
+    </identifier>
+    <active value="true"/>
+    <name>
+        <family id="family-name" value="Moreno Reyes"/>
+        <given id="given-name-1" value="Mario"/>
+        <given id="given-name-2" value="Alfonso"/>
+    </name>
+    <telecom>
+        <system value="email"/>
+        <value value="nombre@example.com"/>
+        <use value="home"/>
+    </telecom>
+    <telecom>
+        <system value="phone"/>
+        <value value="+57(300)000-0000"/>
+        <use value="mobile"/>
+    </telecom>
+    <telecom>
+        <system value="phone"/>
+        <value value="+57(1)111-1111"/>
+        <use value="home"/>
+    </telecom>
+    <gender value="male"/>
+    <birthDate value="1963-08-16"/>
+    <deceasedBoolean value="false"/>
+    <address>
+        <use value="home"/>
+        <type value="both"/>
+        <text value="Calle 116 # 03-27"/>
+        <city value="Bogotá D.C."/>
+        <district value="Bogotá D.C."/>
+        <postalCode value="110100"/>
+        <country value="Colombia"/>
+    </address>
+    <managingOrganization>
+        <reference value="Organization/organization-example-1"/>
+    </managingOrganization>
+</Patient>

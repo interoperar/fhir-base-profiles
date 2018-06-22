@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Location xmlns="http://hl7.org/fhir">
+    <id value="location-example-2"/>
+    <identifier>
+        <use value="usual"/>
+        <value value="1100110001"/>
+    </identifier>
+    <name value="Punto de Atención Primaria # 1"/>
+    <managingOrganization>
+        <reference value="organization-example-1"/>
+    </managingOrganization>
+    <partOf>
+        <reference value="location-example-1"/>
+    </partOf>
+</Location>

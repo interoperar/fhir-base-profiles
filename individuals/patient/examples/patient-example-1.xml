@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient xmlns="http://hl7.org/fhir">
+    <id value="patient-example-1"/>
+    <identifier id="personal">
+        <use value="official"/>
+        <type>
+            <coding>
+                <system value="https://github.com/interoperar/fhir-local-terminologies/identifiers/personal-identifier-type-co"/>
+                <code value="CC"/>
+                <display value="Cédula de Ciudadanía"/>
+            </coding>
+        </type>
+        <value value="987654321"/>
+    </identifier>
+    <identifier id="clinical">
+        <use value="usual"/>
+        <value value="987654321"/>
+    </identifier>
+    <active value="true"/>
+    <name>
+        <family id="family-name" value="Moreno Reyes"/>
+        <given id="given-name-1" value="Mario"/>
+        <given id="given-name-2" value="Alfonso"/>
+    </name>
+    <gender value="male"/>
+    <birthDate value="1963-08-16"/>
+</Patient>

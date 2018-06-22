@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Practitioner xmlns="http://hl7.org/fhir">
+    <id value="practitioner-example-2"/>
+    <identifier id="personal">
+        <use value="official"/>
+        <type>
+            <coding>
+                <system value="https://github.com/interoperar/fhir-local-terminologies/identifiers/personal-identifier-type-co"/>
+                <code value="CC"/>
+                <display value="Cédula de Ciudadanía"/>
+            </coding>
+        </type>
+        <value value="1122334455"/>
+    </identifier>
+    <active value="true"/>
+    <name>
+        <family value="Magnolia"/>
+        <given value="Cruz"/>
+    </name>
+    <qualification>
+        <code>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="39677007"/>
+                <display value="especialista en medicina interna"/>
+            </coding>
+        </code>
+    </qualification>
+</Practitioner>
